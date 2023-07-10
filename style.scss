@@ -7,12 +7,13 @@
 body {
 	font-family: "Poppins", sans-serif;
 	background-color: $darkBlue;
-    height:100vh;
+    min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 .panel {
-	width: 90%;
-	margin: auto;
-	margin-top: 50px;
+	width: 350px;
 	background-color: $darkGrayishBlue;
 	border-radius: 15px;
 	height: 400px;
@@ -66,7 +67,6 @@ body {
 
 @media screen and (min-width: 765px) {
 	.panel {
-		margin-top: 300px;
 		width: 550px;
 		.advice-text {
 			font-size: 28px;
