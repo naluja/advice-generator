@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: hsl(218, 23%, 16%);
+}
+
+.panel {
+  width: 90%;
+  margin: auto;
+  margin-top: 50px;
+  background-color: hsl(217, 19%, 24%);
+  border-radius: 15px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+.panel .advice-number {
+  text-transform: uppercase;
+  color: hsl(150, 100%, 66%);
+  letter-spacing: 0.2rem;
+  padding: 30px;
+}
+.panel .advice-text {
+  color: hsl(193, 38%, 86%);
+  font-weight: 800;
+  font-size: 1.4rem;
+  text-align: center;
+  margin-bottom: 50px;
+  padding: 10px;
+  quotes: initial;
+}
+.panel .advice-text::before {
+  content: '"';
+}
+.panel .advice-text::after {
+  content: '"';
+}
+.panel .divider {
+  background-image: url("/images/pattern-divider-mobile.svg");
+  background-position: center;
+  background-size: cover;
+  width: 295px;
+  height: 16px;
+}
+.panel button {
+  position: absolute;
+  bottom: -32px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 50%;
+  padding: 20px;
+  border: none;
+  background-color: hsl(150, 100%, 66%);
+  transition: 0.3s;
+}
+.panel button:hover {
+  box-shadow: 0px 0px 30px 1px hsl(150, 100%, 66%);
+}
+
+@media screen and (min-width: 765px) {
+  .panel {
+    width: 550px;
+  }
+  .panel .advice-text {
+    font-size: 28px;
+  }
+  .panel .divider {
+    background-image: url("/images/pattern-divider-desktop.svg");
+    width: 444px;
+  }
+}/*# sourceMappingURL=style.css.map */
